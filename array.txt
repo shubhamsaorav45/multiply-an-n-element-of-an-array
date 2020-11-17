@@ -1,0 +1,37 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+    public static void longest(String[] arr,int n)
+    {
+        int max_len=0;
+        int index=0;
+        for(int i=0;i<n;i++)
+        {
+            if(max_len<=arr[i].length())
+            {
+                max_len=arr[i].length();
+                index=i;
+            }
+        }
+        System.out.println(arr[index]);
+    }
+	public static void main (String[] args) {
+		//code
+		Scanner s=new Scanner(System.in);
+		int t=s.nextInt();
+		while(t>0)
+		{
+		    t--;
+		    int n=s.nextInt();
+		    String[] arr=new String[n];
+		    for(int i=0;i<n;i++)
+		    {
+		        arr[i]=s.next();
+		    }
+		    longest(arr,n);
+		}
+	}
+}
