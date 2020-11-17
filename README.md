@@ -1,0 +1,1 @@
+# multiply-an-n-element-of-an-array
